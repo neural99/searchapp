@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+<title>Sök</title>
+
+<style type="text/css">
+
+#tabs {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+#tabs li {
+    display: inline;
+    border: 1px solid;
+    background-color: #9acd32;
+}
+
+.selected {
+    background-color: red;
+}
+
+#tabs a {
+    padding: 0 1em;
+    color: black;
+    text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+<ul id="tabs">
+    <li><a class="tab" id="Alla" href="#Alla">Alla</a></li>
+    <li><a class="tab" id="Google" href="#Google">Google</a></li>
+    <li><a class="tab" id="Bing" href="#Bing">Bing</a></li>
+    <li><a class="tab" id="Yahoo" href="#Yahoo">Yahoo</a></li>
+</ul>
+
+<input id="searchtermfield" type="text" value="Search" />
+<input id="searchbutton" type="button" value="Search" />
+<div id="result"></div>
+</body>
+</html>
